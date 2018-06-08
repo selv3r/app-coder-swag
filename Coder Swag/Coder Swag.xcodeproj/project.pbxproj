@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C708361E20C9E266003023CC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C708361D20C9E266003023CC /* DataService.swift */; };
+		C708362020CA0D70003023CC /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C708361F20CA0D70003023CC /* ProductCell.swift */; };
+		C708362220CA0EB1003023CC /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C708362120CA0EB1003023CC /* Product.swift */; };
 		C7B527B420C9895F0006AB5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B527B320C9895F0006AB5E /* AppDelegate.swift */; };
-		C7B527B620C9895F0006AB5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B527B520C9895F0006AB5E /* ViewController.swift */; };
+		C7B527B620C9895F0006AB5E /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B527B520C9895F0006AB5E /* CategoriesVC.swift */; };
 		C7B527B920C9895F0006AB5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B527B720C9895F0006AB5E /* Main.storyboard */; };
 		C7B527BB20C9895F0006AB5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7B527BA20C9895F0006AB5E /* Assets.xcassets */; };
 		C7B527BE20C9895F0006AB5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B527BC20C9895F0006AB5E /* LaunchScreen.storyboard */; };
+		C7B527C920C994A60006AB5E /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B527C820C994A60006AB5E /* CategoryCell.swift */; };
+		C7B527CB20C9E0CD0006AB5E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B527CA20C9E0CD0006AB5E /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C708361D20C9E266003023CC /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		C708361F20CA0D70003023CC /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		C708362120CA0EB1003023CC /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		C7B527B020C9895F0006AB5E /* Coder Swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coder Swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B527B320C9895F0006AB5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C7B527B520C9895F0006AB5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C7B527B520C9895F0006AB5E /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		C7B527B820C9895F0006AB5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7B527BA20C9895F0006AB5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7B527BD20C9895F0006AB5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7B527BF20C9895F0006AB5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7B527C820C994A60006AB5E /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		C7B527CA20C9E0CD0006AB5E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C708361C20C9E255003023CC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C708361D20C9E266003023CC /* DataService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		C7B527A720C9895F0006AB5E = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +72,43 @@
 		C7B527B220C9895F0006AB5E /* Coder Swag */ = {
 			isa = PBXGroup;
 			children = (
+				C708361C20C9E255003023CC /* Service */,
+				C7B527C720C9943B0006AB5E /* View */,
+				C7B527C620C994330006AB5E /* Model */,
+				C7B527C520C9942D0006AB5E /* Controller */,
 				C7B527B320C9895F0006AB5E /* AppDelegate.swift */,
-				C7B527B520C9895F0006AB5E /* ViewController.swift */,
 				C7B527B720C9895F0006AB5E /* Main.storyboard */,
 				C7B527BA20C9895F0006AB5E /* Assets.xcassets */,
 				C7B527BC20C9895F0006AB5E /* LaunchScreen.storyboard */,
 				C7B527BF20C9895F0006AB5E /* Info.plist */,
 			);
 			path = "Coder Swag";
+			sourceTree = "<group>";
+		};
+		C7B527C520C9942D0006AB5E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C7B527B520C9895F0006AB5E /* CategoriesVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C7B527C620C994330006AB5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7B527CA20C9E0CD0006AB5E /* Category.swift */,
+				C708362120CA0EB1003023CC /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C7B527C720C9943B0006AB5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7B527C820C994A60006AB5E /* CategoryCell.swift */,
+				C708361F20CA0D70003023CC /* ProductCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +183,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7B527B620C9895F0006AB5E /* ViewController.swift in Sources */,
+				C7B527B620C9895F0006AB5E /* CategoriesVC.swift in Sources */,
 				C7B527B420C9895F0006AB5E /* AppDelegate.swift in Sources */,
+				C7B527C920C994A60006AB5E /* CategoryCell.swift in Sources */,
+				C708362020CA0D70003023CC /* ProductCell.swift in Sources */,
+				C7B527CB20C9E0CD0006AB5E /* Category.swift in Sources */,
+				C708361E20C9E266003023CC /* DataService.swift in Sources */,
+				C708362220CA0EB1003023CC /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
